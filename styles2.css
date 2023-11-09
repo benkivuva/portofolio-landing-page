@@ -75,72 +75,48 @@ body {
     flex: 1;
 }
 
-/* Future Enhancements Timeline */
-.timeline {
-    position: relative;
-    padding: 4rem 0;
-    /* Removed the before pseudo-element for the line */
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 2rem;
-    display: flex;
-    /* Align icon with content side by side */
-    align-items: center;
-    /* Center align items vertically */
-}
-
-.timeline-icon {
-    /* Adjust the following as per your design preference */
-    flex-shrink: 0;
-    /* Prevent the icon from shrinking */
-    width: 50px;
-    height: 50px;
-    /* Removed border-radius to make the icon square */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-    /* Add some space between the icon and the text */
-    font-size: 24px;
-    /* Increase font size for clarity */
-    background: #007bff;
-    color: white;
-    transition: background-color 0.3s;
-}
-
-.timeline-content {
-    flex-grow: 1;
-    /* If you have a border for the content, you might want to adjust padding accordingly */
-    padding: 1rem;
-    /* Add padding inside the content box */
-}
-
-/* Hover Effect for Icons */
-.timeline-icon:hover {
-    background-color: #0056b3;
-}
-
-@media (max-width: 767px) {
-    .timeline-item {
-        flex-direction: column;
-        /* Stack them on top of each other on small screens */
-        align-items: flex-start;
-        /* Align items to the start of the flex container */
-    }
-
-    .timeline-icon {
-        margin-bottom: 1rem;
-        /* Add some space between the icon and the text */
-    }
-}
-
-/* Footer Customization */
-footer {
-    font-family: 'Roboto', sans-serif;
-    background: #333;
+/* Future Enhancements Section */
+#future-plans {
+    background-color: rgba(88, 82, 82, 0.7);
     color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.enhancement {
+    margin-bottom: 2rem;
+}
+
+.enhancement i {
+    display: block;
+    /* Makes the icon center-align */
+    margin: auto;
+    /* Auto margins for horizontal centering */
+    margin-bottom: 1rem;
+    /* Space between icon and text */
+}
+
+.enhancement h4 {
+    margin-bottom: 0.5rem;
+    /* Space below heading */
+}
+
+/* Responsive Text Sizing */
+@media (max-width: 768px) {
+    #future-plans h2 {
+        font-size: 1.75rem;
+        /* Smaller heading for mobile */
+    }
+
+    .enhancement h4 {
+        font-size: 1.25rem;
+        /* Smaller subheadings for mobile */
+    }
+
+    .enhancement p {
+        font-size: 1rem;
+        /* Smaller paragraph text for mobile */
+    }
 }
 
 /* Social Icons */
