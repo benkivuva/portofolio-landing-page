@@ -62,45 +62,61 @@ body {
 .timeline {
     position: relative;
     padding: 4rem 0;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: #007bff;
+    /* Removed the before pseudo-element for the line */
 }
 
 .timeline-item {
     position: relative;
     margin-bottom: 2rem;
+    display: flex;
+    /* Align icon with content side by side */
+    align-items: center;
+    /* Center align items vertically */
 }
 
 .timeline-icon {
-    position: absolute;
-    left: calc(50% - 25px);
-    background: #007bff;
-    color: white;
+    /* Adjust the following as per your design preference */
+    flex-shrink: 0;
+    /* Prevent the icon from shrinking */
     width: 50px;
     height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 20px;
+    /* Add some space between the icon and the text */
+    font-size: 24px;
+    /* Increase font size for clarity */
+    background: #007bff;
+    color: white;
     transition: background-color 0.3s;
 }
 
+.timeline-content {
+    flex-grow: 1;
+    /* If you have a border for the content, you might want to adjust padding accordingly */
+    padding: 1rem;
+    /* Add padding inside the content box */
+}
+
+/* Hover Effect for Icons */
 .timeline-icon:hover {
     background-color: #0056b3;
 }
 
-.timeline-content {
-    padding-left: 100px;
-    text-align: left;
+@media (max-width: 767px) {
+    .timeline-item {
+        flex-direction: column;
+        /* Stack them on top of each other on small screens */
+        align-items: flex-start;
+        /* Align items to the start of the flex container */
+    }
+
+    .timeline-icon {
+        margin-bottom: 1rem;
+        /* Add some space between the icon and the text */
+    }
 }
 
 /* Footer Customization */
@@ -158,4 +174,27 @@ footer i:hover {
     .row-eq-height {
         display: block;
     }
+}
+
+/* Custom Styling for GitHub Link */
+.github-link {
+    font-size: 1.2rem;
+    /* Adjust the font size as needed */
+    padding: 30px 55px;
+    /* Add padding to increase button size */
+    border-radius: 8px;
+    /* Add rounded corners for a softer look */
+    background-color: #333;
+    /* Change the background color to a dark shade */
+    color: #fff;
+    /* Set text color to white */
+    text-decoration: none;
+    /* Remove default underline */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* Add a smooth transition effect */
+}
+
+.github-link:hover {
+    background-color: #555;
+    /* Darken the background on hover */
 }
