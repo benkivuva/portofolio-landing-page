@@ -80,7 +80,7 @@ body {
     /* Prevent the icon from shrinking */
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    /* Removed border-radius to make the icon square */
     display: flex;
     align-items: center;
     justify-content: center;
