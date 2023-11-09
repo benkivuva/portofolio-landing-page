@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Blog API Project</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Django Blog API</a>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <section id="intro" class="text-center">
+            <h1 class="display-4">Welcome to the Django Blog API</h1>
+            <p class="lead">Empowering developers to build amazing blog platforms with Django and Django Rest Framework.
+            </p>
+            <a href="https://github.com/yourusername/django-blog-api" class="btn btn-secondary mt-3"
+                target="_blank">View on GitHub</a>
+        </section>
+
+        <!-- Key Features Section -->
+        <section id="features" class="my-5">
+            <h2 class="text-center mb-4">Key Features</h2>
+            <div class="row">
+                <!-- Feature Card with Icon -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-shield fa-3x mb-3"></i>
+                            <h3 class="card-title">Authentication</h3>
+                            <p class="card-text">Secure user accounts with a robust registration process including email
+                                verification and multi-factor authentication.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-shield fa-3x mb-3"></i>
+                            <h3 class="card-title">Blog Post Management</h3>
+                            <p class="card-text">Create, edit, delete, and manage blog posts effortlessly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-shield fa-3x mb-3"></i>
+                            <h3 class="card-title">CORS Support</h3>
+                            <p class="card-text">Implemented CORS (Cross-Origin Resource Sharing) for cross-domain API
+                                access.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-shield fa-3x mb-3"></i>
+                            <h3 class="card-title">JWT Authentication</h3>
+                            <p class="card-text">Implemented JWT (JSON Web Token) authentication for secure API access.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-user-shield fa-3x mb-3"></i>
+                                <h3 class="card-title">Unit Test the REST API</h3>
+                                <p class="card-text">Wrote unit tests to ensure the functionality and reliability of the
+                                    REST API.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-file-alt fa-3x mb-3"></i>
+                                <h3 class="card-title">Swagger Documentation</h3>
+                                <p class="card-text">Created Swagger documentation for clear and interactive API
+                                    documentation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Future Enhancements Section with Timeline -->
+        <section id="future-plans" class="my-5">
+            <h2 class="text-center mb-4">Future Enhancements</h2>
+            <!-- Timeline Structure -->
+            <div class="timeline">
+                <!-- Timeline item -->
+                <div class="timeline-item">
+                    <i class="timeline-icon fas fa-user-circle"></i>
+                    <div class="timeline-content right">
+                        <h4>User Profiles and Avatars</h4>
+                        <p>Introduce personalized user profiles with custom avatars and profile settings.</p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <!-- User Profiles and Avatars -->
+                    <div class="timeline-item">
+                        <i class="timeline-icon fas fa-user-circle"></i>
+                        <div class="timeline-content right">
+                            <h4>User Profiles and Avatars</h4>
+                            <p>Introduce personalized user profiles with custom avatars, profile settings, and the
+                                ability for users to customize their information and display pictures.</p>
+                        </div>
+                    </div>
+
+                    <!-- Search and Filtering -->
+                    <div class="timeline-item">
+                        <i class="timeline-icon fas fa-search"></i>
+                        <div class="timeline-content">
+                            <h4>Search and Filtering</h4>
+                            <p>Enhance your search and filtering capabilities to provide users with efficient and
+                                relevant content discovery. Implement advanced search options and filtering criteria for
+                                an improved user experience.</p>
+                        </div>
+                    </div>
+
+                    <!-- Notifications for Subscribed Blogs -->
+                    <div class="timeline-item">
+                        <i class="timeline-icon fas fa-bell"></i>
+                        <div class="timeline-content right">
+                            <h4>Notifications for Subscribed Blogs</h4>
+                            <p>Implement a notification system that allows users to receive updates and alerts for new
+                                content on blogs they are subscribed to. Keep users engaged and informed.</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Verification -->
+                    <div class="timeline-item">
+                        <i class="timeline-icon fas fa-envelope"></i>
+                        <div class="timeline-content">
+                            <h4>Email Verification</h4>
+                            <p>Enhance the security of user accounts by implementing email verification. This ensures
+                                that users' email addresses are valid and verified before they can use the platform.</p>
+                        </div>
+                    </div>
+
+                    <!-- Improved Testing -->
+                    <div class="timeline-item">
+                        <i class="timeline-icon fas fa-check-circle"></i>
+                        <div class="timeline-content right">
+                            <h4>Improved Testing</h4>
+                            <p>Enhance unit testing coverage and robustness to ensure the reliability and stability of
+                                the platform. Thorough testing is crucial for delivering a high-quality product.</p>
+                        </div>
+                    </div>
+
+                    <!-- Containerization -->
+                    <div class="timeline-item">
+                        <i class="timeline-icon fas fa-cube"></i>
+                        <div class="timeline-content">
+                            <h4>Containerization</h4>
+                            <p>Containerize the API for easy deployment and scaling. Utilize containerization technology
+                                to simplify deployment, management, and scaling of the application, making it more
+                                efficient and reliable.</p>
+                        </div>
+                    </div>
+
+                    <!-- Vue.js Frontend -->
+                    <div class="timeline-item">
+                        <i class="timeline-icon fab fa-vuejs"></i>
+                        <div class="timeline-content right">
+                            <h4>Vue.js Frontend</h4>
+                            <p>Build a Vue.js frontend to consume the API and create a complete blog platform with a
+                                modern and responsive user interface. Vue.js will provide dynamic and interactive user
+                                experiences.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center bg-dark text-light py-3">
+        &copy; 2023 Your Django Blog API Project
+        <!-- Social Icons -->
+        <div>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
