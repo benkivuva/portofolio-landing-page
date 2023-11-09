@@ -159,7 +159,6 @@ footer i:hover {
     .timeline-item,
     .timeline::before {
         left: 0;
-        top: 0;
         transform: translateX(0);
         width: 100%;
         height: 2px;
@@ -167,25 +166,20 @@ footer i:hover {
 
     .timeline-icon {
         position: relative;
-        /* Align icons to the top-left */
         display: inline-block;
-        /* Align with the content */
-        margin-right: 15px;
-        /* Space between icon and content */
-        margin-bottom: -15px;
-        /* Adjust for inline display */
+        margin-right: 0;
+        margin-bottom: 15px;
     }
 
     .timeline-content {
-        padding-left: 75px;
+        padding-left: 0;
+        text-align: center;
         /* Adjust based on your design */
-        text-align: left;
     }
 
     .card {
         width: 100%;
         margin-bottom: 1rem;
-        /* Adjust space between stacked cards */
     }
 
     .row-eq-height {
